@@ -10,12 +10,12 @@ try:
     if data:
         print()
         print('Book Id     : %d' %bcd)
-        print('Book Name   : %s' %data[1])
-        print('Category    : %s' %data[2])
-        print('Author      : %s' %data[3])
-        print('Publication : %s' %data[4])
-        print('Edition     : %s' %data[5])
-        print('Price       : %.2f' %data[6])
+        print('Book Name   : %s' %data[0][1])
+        print('Category    : %s' %data[0][2])
+        print('Author      : %s' %data[0][3])
+        print('Publication : %s' %data[0][4])
+        print('Edition     : %s' %data[0][5])
+        print('Price       : %.2f' %data[0][6])
 
         choice=input("Do you want to Delete Book - Yes/No  : ")
         if choice.upper()== 'YES':
